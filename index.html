@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Golf Mania</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#top").load("_top.html");
+        $("#bottom").load("_bottom.html");
+      });
+    </script>
+    <!-- Styles .css -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Animate On Scroll AOS CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Animate On Scroll AOS JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <div id="top"></div>
+    <!-- content goes here -->
+
+    <!-- beging carousel -->
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/images/carousel/1.jpg"
+            class="d-block w-100"
+            alt="Best courses around."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Best Courses</h5>
+            <p>Best courses around.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/images/carousel/2.jpg"
+            class="d-block w-100"
+            alt="Clothes and shoes."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Clothes & Shoes</h5>
+            <p>Clothes and shoes.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/images/carousel/3.jpg"
+            class="d-block w-100"
+            alt="Third Image Placeholder"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Golf Assesories</h5>
+            <p>Golf assesories.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="ratio ratio-16x9 carousel-alternate">
+      <iframe
+        src="https://www.youtube.com/embed/FsHYNmzdgB0"
+        title="YouTube Video"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+    <!-- end carousel -->
+
+    <!-- Font Awesome Row begin -->
+    <div class="container-fluid text-center fa-row">
+      <div class="row">
+        <div
+          class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <i class="fa-solid fa-flag fa-row-icon"></i><br />
+          <a href="#">Courses</a>
+        </div>
+        <div
+          class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <i class="fa-solid fa-golf-ball-tee fa-row-icon"></i><br />
+          <a href="#">Products</a>
+        </div>
+        <div
+          class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <i class="fa-solid fa-map-location fa-row-icon"></i><br />
+          <a href="#">Golf Map</a>
+        </div>
+        <div
+          class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <i class="fa-solid fa-shirt fa-row-icon"></i><br />
+          <a href="#">Apparel</a>
+        </div>
+        <div
+          class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <i class="fa-solid fa-shop fa-row-icon"></i><br />
+          <a href="#">Stats</a>
+        </div>
+        <div
+          class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <i class="fa-solid fa-images fa-row-icon"></i><br />
+          <a href="#">Images</a>
+        </div>
+      </div>
+    </div>
+    <!-- Font Awesome Row end -->
+
+    <!-- first description section begin -->
+    <div class="container volunteer-div google-font" data-aos="fade-up">
+      <div class="row">
+        <div class="col">
+          <img
+            src="/images/general/volunteer.jpg"
+            class="img-responsive volunteer-img"
+            alt="Image Placeholder"
+          />
+          <h2>Volunteer Opportunity</h2>
+
+          <p>
+            Please join us in a unique opportunity to be a part of this
+            community in helping others who enjoy the sport of golf. As you are
+            shopping for golf sporting equipment, golf apparel or just playing a
+            round, you can upload information that will help others. You will
+            have a feature on our site giving you credit for unlocking valuable
+            information to our golf community. The more you contribute, the more
+            you can earn promotional goods that you, yourself can enjoy. Don’t
+            miss an opportunity to help others while also playing a game you
+            love.
+          </p>
+
+          <p>
+            About Us:
+          </p>
+
+          <p>
+            Golf Mania is your resource for all things related to golf. We have
+            invested to time to research and find you the best information and
+            pricing for all things related to the best sport. We are here to
+            provide you superior services as an acting agent to unlock the best
+            rates for any and all your golf needs. This could range from golf
+            apparel, golf rates at highly sought after golf course, capturing
+            golf statistics, golf lessons, and much more.
+          </p>
+
+          <p>
+            We are happy you are on our site, look around and start learning and
+            saving more to all things pertaining to golf.
+          </p>
+
+          <div>
+            <a href="form.html" class="btn btn-outline-primary btn-volunteer"
+              >Volunteer Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- first description section end -->
+
+    <!-- gallery begins -->
+    <div class="container text-center">
+      <div class="row">
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="/images/fancybox/originals/1.jpg">
+            <img
+              src="/images/fancybox/thumbs/1.jpg"
+              class="img-responsive img-fancybox"
+              alt="Assesories"
+              data-aos="flip-left"
+            />
+          </a>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="/images/fancybox/originals/2.jpg">
+            <img
+              src="/images/fancybox/thumbs/2.jpg"
+              class="img-responsive img-fancybox"
+              alt="Clothing"
+              data-aos="flip-left"
+            />
+          </a>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="/images/fancybox/originals/3.jpg">
+            <img
+              src="/images/fancybox/thumbs/3.jpg"
+              class="img-responsive img-fancybox"
+              alt="Stats"
+              data-aos="flip-left"
+            />
+          </a>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="/images/fancybox/originals/4.jpg">
+            <img
+              src="/images/fancybox/thumbs/4.jpg"
+              class="img-responsive img-fancybox"
+              alt="Lessons"
+              data-aos="flip-left"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="row gallery-button">
+        <div class="col-12 text-center">
+          <a href="gallery.html" class="btn btn-outline-primary btn-gallery"
+            >View Gallery</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- gallery ends -->
+
+    <!-- second description section begins -->
+    <div class="container contact-div google-font" data-aos="fade-up">
+      <div class="row">
+        <div class="col">
+          <img
+            src="/images/general/spokesperson.jpg"
+            class="img-responsive contact-img"
+            alt="Image Placeholder"
+          />
+          <h2>Traveling Scout</h2>
+
+          <p>
+            We have employed the best of the best agents throughout most all of
+            the states in the US. We now have over 45 agents that travel to
+            capture the best statistics from the best golf courses in the
+            country. Our team is also working hard to collaborate with the golf
+            industry’s best sporting companies and brands to get our members the
+            best pricing on all goods related to golf.
+          </p>
+
+          <p>
+            <strong>
+              Lastly, we will also help with golf lessons with some of the best
+              golf pros in the nation. Check out our SCHEDULE tab to locate and
+              sign up for lessons in your area.
+            </strong>
+          </p>
+          <div>
+            <a href="#footerInfo" class="btn btn-outline-primary btn-contact"
+              >contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- second description section ends -->
+
+    <!-- members begin -->
+    <div class="container text-center staff" id="staff">
+      <div class="row">
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <img
+            src="/images/staff/thumbs/1.jpg"
+            alt="Roger Stephens"
+            class="cropped"
+            data-aos="zoom-in"
+          />
+          <br />
+          <blockquote>
+            The value of routine; trusting your swing.
+            <cite>Roger Stephens</cite>
+          </blockquote>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <img
+            src="/images/staff/thumbs/2.jpg"
+            alt="Ralph cho"
+            class="cropped"
+            data-aos="zoom-in"
+          />
+          <br />
+          <blockquote>
+            The most important shot in golf is the next one.
+            <cite>Ralph cho</cite>
+          </blockquote>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <img
+            src="/images/staff/thumbs/3.jpg"
+            alt="James Ryan"
+            class="cropped"
+            data-aos="zoom-in"
+          />
+          <br />
+          <blockquote>
+            To some golfers, the greatest handicap is the ability to add
+            correctly.
+            <cite>James Ryan</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- members end -->
+
+    <!-- content goes here -->
+    <div id="bottom"></div>
+
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>
